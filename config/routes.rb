@@ -3,7 +3,7 @@ AplikasiTA::Application.routes.draw do
 
   resources :lectures
   
-  root :to => 'lectures#new'
+  root :to => 'sessions#new'
   
 
   # The priority is based upon order of creation:
