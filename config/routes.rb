@@ -1,4 +1,6 @@
 AplikasiTA::Application.routes.draw do
+  get "lectures/new"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
