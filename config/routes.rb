@@ -1,4 +1,6 @@
 AplikasiTA::Application.routes.draw do
+  get "sessions/new"
+
   resources :lectures
   
   root :to => 'lectures#new'
