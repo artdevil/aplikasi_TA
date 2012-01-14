@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>AplikasiTA</title>
-  <%= stylesheet_link_tag    "application" %>
-  <%= javascript_include_tag "application" %>
+  <title>Aplikasi TA/PA IT Telkom</title>
+  <%= render 'layouts/stylesheet' %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+<%= render 'layouts/header' %>
+<section>
+	<%= yield %>
+</section>
+<%= render 'layouts/footer' %>
 </body>
 </html>

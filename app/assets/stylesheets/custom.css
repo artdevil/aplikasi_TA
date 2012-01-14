@@ -1,0 +1,161 @@
+/* page source */
+body{
+	background-color: #f5fdff;
+}
+
+header{
+	background-color: #55d5ec;
+	height: 150px;
+	float: left;
+	width: 100%;
+}
+
+#notification_bar{
+	background-color: #39393b;
+	height: 50px;
+	width: 100%;
+}
+
+.container-left{
+	width: 20%;
+	height: auto;
+	float: left;
+}
+
+.container-right{
+	width: 80%;
+	float: left;
+	height: auto;
+}
+
+.round{
+	-moz-border-radius: 10px;
+	border: solid 1px #c4cfa6;
+	border-radius: 10px;
+}
+
+section{
+	width: 100%;
+	height: auto;
+	float: left;
+}
+/* footer */
+
+footer{
+	border-top: solid #C6D880 1px; 	
+	float: left;
+	width: 100%;
+	padding-bottom: 10px;
+}
+#author{
+	width: 800px;
+	margin: 0 auto;
+	padding: 0 10px 0 10px;
+
+}
+#author p{
+	color: #7b7f80;
+	float: left;
+	margin-top: 20px;
+	font-weight: bold;
+	}
+
+#logo_IT{
+	float: right;
+	background: white;
+	margin-top: 10px;
+	padding: 5px;
+}
+
+/* login */
+#rounding-login{
+	height: auto;
+	margin: 50px 0 100px 0;
+}
+
+#form_login{
+	width: 300px;
+	padding: 10px;
+	-moz-box-shadow:    0 0 5px 1px #c4cfa6;
+  	-webkit-box-shadow: 0 0 5px 1px #c4cfa6;
+  	box-shadow:         0 0 5px 1px #c4cfa6;
+  	-moz-border-radius: 5px;
+  	-webkit-border-radius: 5px;
+  	border-radius : 5px;
+  	margin: 0 auto;
+}
+
+#form_login h3{
+	background-color: #39393b;;
+	padding: 5px 10px 5px 10px;
+	font-weight: bold;
+	color: #FFF6BF;
+	margin: 0px;
+	border: solid 2px #dbdbdb;
+	border-bottom-style: none;
+}
+
+#form_id{
+	background: white;
+	padding-top: 10px;
+	border: solid 1px #dbdbdb;
+	border-top-style: none;
+	padding-bottom: 10px;
+}
+
+.field{
+	margin: 10px auto;
+	width: 60%;
+}
+
+/* input */
+input[type=text]{
+	width: 90%;
+  	padding: 2px 5px 2px 5px;
+  	margin: 0;
+}
+
+input[type=password]{
+	width: 90%;
+  	padding: 2px 5px 2px 5px;
+  	margin: 0;
+}
+
+input[type=submit]{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #fffcff;
+	padding: 4px 8px;
+	background: -moz-linear-gradient(
+		top,
+		#dbdbdb 0%,
+		#696969);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#dbdbdb),
+		to(#696969));
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border: 1px solid #949494;
+	-moz-box-shadow:
+		0px 1px 3px rgba(247,237,247,0.5),
+		inset 0px 0px 1px rgba(255,255,255,0.5);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(247,237,247,0.5),
+		inset 0px 0px 1px rgba(255,255,255,0.5);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.7),
+		0px 1px 0px rgba(247,247,247,0.3);
+		cursor: pointer;
+		text-align: right;
+		margin-left: 65%;
+}
+
+input::-webkit-input-placeholder {
+    color:    red;
+}
+input:-moz-placeholder {
+    color: #565656;
+}
+
