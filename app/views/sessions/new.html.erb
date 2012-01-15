@@ -2,14 +2,17 @@
 		<div id="form_login">
 			<h3>LOGIN</h3>
 			<div id="form_id">
-				<%= form_for(:session ) do |f| %>
+				<%= form_for(:session, :url => sessions_path ) do |f| %>
+					<% if flash[:error] %>
+      					<p class="error"><%= flash[:error] %></p>
+    				<% end %>
 					<div class="field">
-						<%= f.text_field :nim, :placeholder => "masukkan NIM" %>
+						<%= f.text_field :NIP, :placeholder => "masukkan NIM" %>
 					</div>
 					<div class="field">
 						<%= f.password_field :password, :placeholder => "Password" %>
 					</div>
-					<div class="field">
+					<div class="actions">
 						<%= f.submit "Login" %>
 					</div>
 				<% end %>

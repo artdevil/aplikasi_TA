@@ -12,7 +12,7 @@ header{
 
 #notification_bar{
 	background-color: #39393b;
-	height: 50px;
+	height: 30px;
 	width: 100%;
 }
 
@@ -108,6 +108,11 @@ footer{
 	width: 60%;
 }
 
+.error{
+	width: 90%;
+	margin: 0 auto;
+}
+
 /* input */
 input[type=text]{
 	width: 90%;
@@ -152,6 +157,17 @@ input[type=submit]{
 		margin-left: 65%;
 }
 
+input[type=submit]:hover{
+	background: -moz-linear-gradient(
+		top,
+		#9eecff 0%,
+		#0182a2);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#9eecff),
+		to(#0182a2));
+		color: white;
+}
 input::-webkit-input-placeholder {
     color:    red;
 }
