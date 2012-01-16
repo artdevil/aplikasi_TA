@@ -5,6 +5,7 @@ AplikasiTA::Application.routes.draw do
   
   root :to => 'sessions#new'
   match "/signout", :to => "sessions#destroy"  
+  match "/lecture", :to => "lectures#new"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

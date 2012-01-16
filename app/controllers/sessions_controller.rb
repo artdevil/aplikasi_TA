@@ -10,7 +10,8 @@ class SessionsController < ApplicationController
       @title = "Sign in"
       render "new"  
     else
-    
+      sign_in lecture
+      redirect_to lecture
     end
   end
   

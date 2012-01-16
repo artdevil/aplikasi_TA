@@ -34,5 +34,21 @@ describe SessionsController do
         flash.now[:error].should =~ /invalid/i
       end
     end
+    
+    describe "with valid NIP and password" do
+      before(:each) do
+        @lecture = Factory(:lecture)
+        @attr = {:NIP => @lecture.NIP , :password => @lecture.password }
+      end
+      
+      it "should sign in the user in" do
+        post :create, :session => @attr
+      end
+      
+      it "should redirect to the user show page" do
+        post :create, :session => @attr
+        response.should redirect_to(lecture_path(@lecture))
+      end
+    end
   end
 end
